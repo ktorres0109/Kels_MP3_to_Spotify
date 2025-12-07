@@ -1,0 +1,17 @@
+# Python junk
+__pycache__/
+*.py[cod]
+
+# Spotify Credentials Cache (VERY IMPORTANT)
+.cache
+.cache-*
+
+# Personal Data Files
+FINAL_LOCAL_ONLY.txt
+FINAL_ADD_THESE.txt
+CLASSICAL_FAILURES.txt
+still_missing.txt
+scan_progress.json
+
+# Environment variables (if you use .env)
+.env
