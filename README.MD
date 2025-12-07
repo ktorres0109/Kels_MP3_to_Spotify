@@ -21,11 +21,15 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 ## 📦 Installation
 
 1.  **Clone the repository:**
-    git clone https://github.com/ktorres0109/Kels_MP3_to_Spotify.git
+    ```bash
+    git clone [https://github.com/ktorres0109/Kels_MP3_to_Spotify.git](https://github.com/ktorres0109/Kels_MP3_to_Spotify.git)
     cd Kels_MP3_to_Spotify
+    ```
 
 2.  **Install dependencies:**
+    ```bash
     pip install spotipy thefuzz tqdm
+    ```
 
 3.  **Set up your environment:**
     * Create a `.gitignore` file to protect your secrets (see "Security" below).
