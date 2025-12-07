@@ -38,7 +38,6 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 
 Open `spotify_super_sync.py` and configure the following variables at the top of the file:
 
-```python
 # Spotify API Credentials
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID") # or your ID string
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") # or your Secret string
