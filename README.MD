@@ -38,18 +38,18 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 
 Open `spotify_super_sync.py` and configure the following variables at the top of the file:
 
-# Spotify API Credentials
+### Spotify API Credentials
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID") # or your ID string
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") # or your Secret string
 REDIRECT_URI = "[http://127.0.0.1:8888/callback](http://127.0.0.1:8888/callback)"
 
-# Target Playlist
+### Target Playlist
 PLAYLIST_LINK = "[https://open.spotify.com/playlist/](https://open.spotify.com/playlist/)..."
 
-# Your Music Folder
+### Your Music Folder
 LOCAL_MUSIC_PATH = r"C:\Path\To\Your\Music"
 
-Getting Spotify Credentials
+## Getting Spotify Credentials
 Go to the Spotify Developer Dashboard.
 
 Create a new App.
