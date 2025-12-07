@@ -49,7 +49,7 @@ PLAYLIST_LINK = "http://googleusercontent.com/spotify.com/..."
 
 # Your Music Folder
 LOCAL_MUSIC_PATH = r"C:\Path\To\Your\Music"
-
+```
 ### Getting Spotify Credentials
 1.  Go to the Spotify Developer Dashboard.
 2.  Create a new App.
