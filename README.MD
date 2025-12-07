@@ -21,15 +21,11 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 ## 📦 Installation
 
 1.  **Clone the repository:**
-    ```bash
     git clone [https://github.com/YOUR_USERNAME/Kels_MP3_to_Spotify.git](https://github.com/YOUR_USERNAME/Kels_MP3_to_Spotify.git)
     cd Kels_MP3_to_Spotify
-    ```
 
 2.  **Install dependencies:**
-    ```bash
     pip install spotipy thefuzz tqdm
-    ```
 
 3.  **Set up your environment:**
     * Create a `.gitignore` file to protect your secrets (see "Security" below).
@@ -44,7 +40,7 @@ CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") # or your Secret string
 REDIRECT_URI = "[http://127.0.0.1:8888/callback](http://127.0.0.1:8888/callback)"
 
 ### Target Playlist
-PLAYLIST_LINK = "[https://open.spotify.com/playlist/](https://open.spotify.com/playlist/)..."
+PLAYLIST_LINK = "[https://open.spotify.com/playlist/]..."
 
 ### Your Music Folder
 LOCAL_MUSIC_PATH = r"C:\Path\To\Your\Music"
