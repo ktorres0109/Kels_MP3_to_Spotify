@@ -58,7 +58,7 @@ In the App settings, add http://127.0.0.1:8888/callback to the Redirect URIs.
 
 Copy your Client ID and Client Secret.
 
-🚀 Usage
+## 🚀 Usage
 The script operates in two modes, controlled by the MODE variable in the script:
 
 1. Folder Mode (Default)
@@ -73,7 +73,7 @@ Run the script:
 
 
 python spotify_super_sync.py
-🔒 Security Note
+## 🔒 Security Note
 NEVER commit your CLIENT_SECRET or .cache file to GitHub.
 
 Ensure your .gitignore file includes:
@@ -82,14 +82,14 @@ Ensure your .gitignore file includes:
 .cache-*
 scan_progress.json
 *.txt
-📝 Output Files
+## 📝 Output Files
 FINAL_LOCAL_ONLY.txt: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
 
 CLASSICAL_FAILURES.txt: Classical music files separated for manual review.
 
 scan_progress.json: Saves your spot so you can stop/resume the script.
 
-🤝 Contributing
+## 🤝 Contributing
 Feel free to fork this repo and submit pull requests if you find new regex patterns or edge cases!
 
 
