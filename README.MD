@@ -91,9 +91,3 @@ scan_progress.json: Saves your spot so you can stop/resume the script.
 
 ## 🤝 Contributing
 Feel free to fork this repo and submit pull requests if you find new regex patterns or edge cases!
-
-
-### One Final Tip for GitHub
-When you create the repository on GitHub, look for the text box that asks for a "Description." You can use this one-liner:
-
-You are all set! Good luck with the upload.
