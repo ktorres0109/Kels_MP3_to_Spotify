@@ -38,58 +38,55 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 
 Open `spotify_super_sync.py` and configure the following variables at the top of the file:
 
-### Spotify API Credentials
+```python
+# Spotify API Credentials
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID") # or your ID string
-
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") # or your Secret string
-
 REDIRECT_URI = "http://127.0.0.1:8888/callback"
 
-### Target Playlist
-PLAYLIST_LINK = "https://open.spotify.com/playlist/..."
+# Target Playlist
+PLAYLIST_LINK = "http://googleusercontent.com/spotify.com/..."
 
-### Your Music Folder
+# Your Music Folder
 LOCAL_MUSIC_PATH = r"C:\Path\To\Your\Music"
 
-## Getting Spotify Credentials
-Go to the Spotify Developer Dashboard.
-
-Create a new App.
-
-In the App settings, add http://127.0.0.1:8888/callback to the Redirect URIs.
-
-Copy your Client ID and Client Secret.
+### Getting Spotify Credentials
+1.  Go to the Spotify Developer Dashboard.
+2.  Create a new App.
+3.  In the App settings, add `http://127.0.0.1:8888/callback` to the **Redirect URIs**.
+4.  Copy your Client ID and Client Secret.
 
 ## 🚀 Usage
-The script operates in two modes, controlled by the MODE variable in the script:
 
-1. Folder Mode (Default)
+The script operates in two modes, controlled by the `MODE` variable in the script:
+
+### 1. Folder Mode (Default)
 Scans your local music directory and attempts to match every MP3 found.
-
+```python
 MODE = "FOLDER"
-2. Text Mode
-Processes a specific text file (FINAL_LOCAL_ONLY.txt) containing a list of filenames that previously failed.
-
+### 2. Text Mode
+Processes a specific text file (`FINAL_LOCAL_ONLY.txt`) containing a list of filenames that previously failed.
+```python
 MODE = "TEXT"
-Run the script:
-
-
-python spotify_super_sync.py
+ ```bash
+   python spotify_super_sync.py
+ ```
 ## 🔒 Security Note
 NEVER commit your CLIENT_SECRET or .cache file to GitHub.
 
 Ensure your .gitignore file includes:
-
+ ```bash
 .cache
 .cache-*
 scan_progress.json
 *.txt
+ ```
 ## 📝 Output Files
-FINAL_LOCAL_ONLY.txt: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
+ `FINAL_LOCAL_ONLY.txt`: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
 
-CLASSICAL_FAILURES.txt: Classical music files separated for manual review.
+`CLASSICAL_FAILURES.txt`: Classical music files separated for manual review.
 
-scan_progress.json: Saves your spot so you can stop/resume the script.
+`scan_progress.json`: Saves your spot so you can stop/resume the script.
 
 ## 🤝 Contributing
 Feel free to fork this repo and submit pull requests if you find new regex patterns or edge cases!
