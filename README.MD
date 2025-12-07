@@ -36,7 +36,9 @@ Open `spotify_super_sync.py` and configure the following variables at the top of
 
 ### Spotify API Credentials
 CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID") # or your ID string
+
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") # or your Secret string
+
 REDIRECT_URI = "[http://127.0.0.1:8888/callback](http://127.0.0.1:8888/callback)"
 
 ### Target Playlist
