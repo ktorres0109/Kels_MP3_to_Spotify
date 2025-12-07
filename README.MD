@@ -84,11 +84,11 @@ scan_progress.json
 *.txt
  ```
 ## 📝 Output Files
- *`FINAL_LOCAL_ONLY.txt`: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
+ * `FINAL_LOCAL_ONLY.txt`: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
 
-*`*CLASSICAL_FAILURES.txt`: Classical music files separated for manual review.
+* `CLASSICAL_FAILURES.txt`: Classical music files separated for manual review.
 
-*`scan_progress.json`: Saves your spot so you can stop/resume the script.
+* `scan_progress.json`: Saves your spot so you can stop/resume the script.
 
 ## 🤝 Contributing
 Feel free to fork this repo and submit pull requests if you find new regex patterns or edge cases!
