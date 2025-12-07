@@ -64,26 +64,19 @@ The script operates in two modes, controlled by the MODE variable in the script:
 1. Folder Mode (Default)
 Scans your local music directory and attempts to match every MP3 found.
 
-Python
-
 MODE = "FOLDER"
 2. Text Mode
 Processes a specific text file (FINAL_LOCAL_ONLY.txt) containing a list of filenames that previously failed.
 
-Python
-
 MODE = "TEXT"
 Run the script:
 
-Bash
 
 python spotify_super_sync.py
 🔒 Security Note
 NEVER commit your CLIENT_SECRET or .cache file to GitHub.
 
 Ensure your .gitignore file includes:
-
-Plaintext
 
 .cache
 .cache-*
