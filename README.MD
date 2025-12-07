@@ -22,7 +22,7 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/ktorres0109/Kels_MP3_to_Spotify.git](https://github.com/ktorres0109/Kels_MP3_to_Spotify.git)
+    git clone https://github.com/ktorres0109/Kels_MP3_to_Spotify.git
     cd Kels_MP3_to_Spotify
     ```
 
@@ -64,10 +64,12 @@ The script operates in two modes, controlled by the `MODE` variable in the scrip
 Scans your local music directory and attempts to match every MP3 found.
 ```python
 MODE = "FOLDER"
+```
 ### 2. Text Mode
 Processes a specific text file (`FINAL_LOCAL_ONLY.txt`) containing a list of filenames that previously failed.
 ```python
 MODE = "TEXT"
+```
  ```bash
    python spotify_super_sync.py
  ```
@@ -82,11 +84,11 @@ scan_progress.json
 *.txt
  ```
 ## 📝 Output Files
- `FINAL_LOCAL_ONLY.txt`: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
+ `*FINAL_LOCAL_ONLY.txt`: Songs that truly could not be found on Spotify (likely unreleased leaks or local edits).
 
-`CLASSICAL_FAILURES.txt`: Classical music files separated for manual review.
+`*CLASSICAL_FAILURES.txt`: Classical music files separated for manual review.
 
-`scan_progress.json`: Saves your spot so you can stop/resume the script.
+`*scan_progress.json`: Saves your spot so you can stop/resume the script.
 
 ## 🤝 Contributing
 Feel free to fork this repo and submit pull requests if you find new regex patterns or edge cases!
