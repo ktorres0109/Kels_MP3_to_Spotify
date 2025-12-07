@@ -21,7 +21,7 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 ## 📦 Installation
 
 1.  **Clone the repository:**
-    git clone (https://github.com/ktorres0109/Kels_MP3_to_Spotify.git)
+    git clone [https://github.com/ktorres0109/Kels_MP3_to_Spotify.git]
     cd Kels_MP3_to_Spotify
 
 2.  **Install dependencies:**
@@ -39,10 +39,10 @@ CLIENT_ID = os.getenv("SPOTIFY_CLIENT_ID") # or your ID string
 
 CLIENT_SECRET = os.getenv("SPOTIFY_CLIENT_SECRET") # or your Secret string
 
-REDIRECT_URI = "(http://127.0.0.1:8888/callback)"
+REDIRECT_URI = "[http://127.0.0.1:8888/callback]"
 
 ### Target Playlist
-PLAYLIST_LINK = "(https://open.spotify.com/playlist/)..."
+PLAYLIST_LINK = "[https://open.spotify.com/playlist/]..."
 
 ### Your Music Folder
 LOCAL_MUSIC_PATH = r"C:\Path\To\Your\Music"
