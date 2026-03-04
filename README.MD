@@ -21,13 +21,13 @@ Unlike standard importers, this tool uses aggressive fuzzy matching and logic br
 ## 📦 Installation
 
 1.  **Clone the repository:**
-    ```bash
+    ```python
     git clone https://github.com/ktorres0109/Kels_MP3_to_Spotify.git
     cd Kels_MP3_to_Spotify
     ```
 
 2.  **Install dependencies:**
-    ```bash
+    ```python
     pip install spotipy thefuzz tqdm
     ```
 
@@ -70,14 +70,14 @@ Processes a specific text file (`FINAL_LOCAL_ONLY.txt`) containing a list of fil
 ```python
 MODE = "TEXT"
 ```
- ```bash
+ ```python
    python spotify_super_sync.py
  ```
 ## 🔒 Security Note
 NEVER commit your CLIENT_SECRET or .cache file to GitHub.
 
 Ensure your .gitignore file includes:
- ```bash
+ ```python
 .cache
 .cache-*
 scan_progress.json
